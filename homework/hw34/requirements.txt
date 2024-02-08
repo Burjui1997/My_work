@@ -1,0 +1,7 @@
+
+    UserID : INTEGER, PRIMARY KEY, AUTOINCREMENT
+    FirstName : TEXT, NOT NULLABLE
+    LastName : TEXT, NOT NULLABLE
+    Password : TEXT, NULLABLE
+    Email : TEXT
+    VKID : TEXT, NULLABLE
