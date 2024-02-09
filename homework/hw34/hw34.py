@@ -29,7 +29,7 @@ class User(Base):
     Password = Column(String, nullable=True)
     Email = Column(String)
     VKID = Column(String, nullable=True)
-    id = Column(Integer, ForeignKey("Users.UserID"), nullable=False)
+    id = relationship(Integer, ForeignKey("Users.UserID"), nullable=False)
 
 
 def add_user(session, user_data: dict):
